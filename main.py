@@ -4,9 +4,9 @@ from datetime import datetime
 
 # Replace with your actual credentials
 reddit = praw.Reddit(
-    client_id="avP-wmjTHvNKwrSx9YTHgQ",
+    client_id="",
     client_secret=None,
-    refresh_token="105745183306795-z8dT7v_Z-Pk8Kq8xy9BHUJDfrSSJeg",
+    refresh_token="",
     user_agent="windows:reddit_persona:v1.0 (by u/YOUR_USERNAME)"
 )
 
