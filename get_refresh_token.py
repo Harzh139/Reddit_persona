@@ -42,7 +42,7 @@ def get_code():
 def main():
     code = get_code()
     if code is None:
-        print("❌ Error: No code received.")
+        print(" Error: No code received.")
         return
 
     reddit = praw.Reddit(
@@ -52,9 +52,9 @@ def main():
         user_agent=USER_AGENT,
     )
     refresh_token = reddit.auth.authorize(code)
-    print("\n✅ Your refresh token is:\n")
+    print("\nYour refresh token is:\n")
     print(refresh_token)
-    print("\n💡 Save this securely. You’ll use it in your main.py.")
+    print("\n Save this securely. You’ll use it in your main.py.")
 
 
 if __name__ == "__main__":
