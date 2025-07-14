@@ -131,13 +131,13 @@ def save_persona_to_file(persona, filename="user_persona.txt"):
         for behaviour, url in persona["Behaviours"]:
             f.write(f"• {behaviour}\n  ↪ {url}\n")
 
-    print(f"✅ Persona saved to {filename}")
+    print(f" Persona saved to {filename}")
 
 def main():
     reddit_url = input("Enter Reddit profile URL: ").strip()
     match = re.search(r"reddit\.com/user/([^/]+)/?", reddit_url)
     if not match:
-        print("❌ Invalid Reddit URL")
+        print(" Invalid Reddit URL")
         return
 
     username = match.group(1)
